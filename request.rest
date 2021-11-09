@@ -1,0 +1,46 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJJcmZhbiIsImVtYWlsIjoiYWJjQGdtYWlsLmNvbSIsImlhdCI6MTYzNjM1NDEwNCwiZXhwIjoxNjM2MzU0MTE5fQ.QOZqvSsAlDRjVCIeUW73aFWNYT_Gmt_OlDs28DrwgJg
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Irfan m",
+    "email": "aaa@gmail.com",
+    "password": "1234",
+    "confirmPassword": "1234"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "abc@gmail.com",
+    "password": "1234"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
+
+###
+GET http://localhost:5000/pokemon
+
+###
+GET http://localhost:5000/pokemon/101
+
+###
+GET http://localhost:5000/my-pokemon
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJJcmZhbiIsImVtYWlsIjoiYWJjQGdtYWlsLmNvbSIsImlhdCI6MTYzNjM1MDk2NCwiZXhwIjoxNjM2MzUwOTc5fQ.5pxdlRyL-qbbpTCQAThFRC9RtWVtpDUIX7MZNrL5gX8
+
+###
+POST http://localhost:5000/tangkap/102
+Authorization: Bearer 
+
+###
+DELETE http://localhost:5000/delete-pokemon/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJJcmZhbiIsImVtYWlsIjoiYWJjQGdtYWlsLmNvbSIsImlhdCI6MTYzNjM2NzQxNiwiZXhwIjoxNjM2MzY3NDMxfQ.jGWo2mKgjm7708NRi-kYmebKCjIQ1ncYqPbFOh_x6-4
